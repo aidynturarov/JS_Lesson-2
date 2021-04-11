@@ -1,0 +1,74 @@
+<script>
+    var a;
+    
+    console.log("Вариант 1:");
+    a = parseInt(Math.random() * 15);
+    console.log("a = ", a);
+
+    switch (a) {
+        case 0:
+            console.log(a++);
+        case 0:
+            console.log(a++);
+        case 1:
+            console.log(a++);
+        case 2:
+            console.log(a++);
+        case 3:
+            console.log(a++);
+        case 4:
+            console.log(a++);
+        case 5:
+            console.log(a++);
+        case 6:
+            console.log(a++);
+        case 7:
+            console.log(a++);
+        case 8:
+            console.log(a++);
+        case 9:
+            console.log(a++);
+        case 10:
+            console.log(a++);
+        case 11:
+            console.log(a++);
+        case 12:
+            console.log(a++);
+        case 13:
+            console.log(a++);
+        case 14:
+            console.log(a++);
+        case 15:
+            console.log(a++);
+        default:
+            break;
+    }
+
+    console.log("Вариант 2:");
+    var l = 15; //лимит от 0 до 15
+    a = parseInt(Math.random() * l);
+    console.log("a = ", a);
+
+    switch (a) {
+        case a:
+            while( a <= l) {
+                console.log(a++);
+            }
+        default:
+            break;
+    }
+
+    console.log("Вариант 3, рекурсивный способ:");
+    a = parseInt(Math.random() * l);
+    console.log("a = ", a);
+
+    function getNumber(n) {
+        console.log(n++);
+        if (n == l) {
+            return n;
+        } else {
+            return getNumber(n);
+        }
+    }
+    console.log(getNumber(a))
+</script>
