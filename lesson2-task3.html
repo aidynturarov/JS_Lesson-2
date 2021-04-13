@@ -1,0 +1,17 @@
+<script>
+    var a, b;
+
+    a = parseInt(Math.random() * 200 - 100);
+    b = parseInt(Math.random() * 200 - 100);
+
+    console.log("a = ", a);
+    console.log("b = ", b);
+    
+    if(Math.min(a, b) >= 0) {
+        console.log("положительные, их расзность a - b = ", a - b);
+    } else if (Math.max(a, b) < 0) {
+        console.log("отрицательные, их произведение a * b = ", a * b);
+    } else {
+        console.log("разных знаков, х сумма a + b = ", a + b);
+    }
+</script>

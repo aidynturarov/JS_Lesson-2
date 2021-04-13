@@ -1,0 +1,29 @@
+<script>
+    var a = parseInt(Math.random() * 200 - 100);
+    var b = parseInt(Math.random() * 200 - 100);
+
+    console.log("a = ", a);
+    console.log("b = ", b);
+
+    function getAddition(a, b) {
+        return a + b;
+    }
+
+    function getSubtraction(a, b) {
+        return a - b;
+    }
+
+    function getMultiplication(a, b) {
+        return a * b;
+    }
+
+    function getDivision(a, b) {
+        b ? return a / b : return "Число не делится на ноль!";
+    }
+
+    console.log("Сложение: ", getAddition(a, b));
+    console.log("Вычитание: ", getSubtraction(a, b));
+    console.log("Умножение: ", getMultiplication(a, b));
+    console.log("Деление: ", getDivision(a, b));
+
+</script>

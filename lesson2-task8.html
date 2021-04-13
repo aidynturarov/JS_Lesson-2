@@ -1,0 +1,17 @@
+<script>
+    var a = parseInt(Math.random() * 10);
+    var b = parseInt(Math.random() * 10);
+
+    console.log("a = ", a);
+    console.log("b = ", b);
+
+    function power(val, pow) {
+        if (pow == 1) {
+            return val;
+        } else {
+            return val * power(val, pow - 1);
+        }
+    }
+
+    console.log("Результат, a в степени b: ", power(a, b));
+</script>

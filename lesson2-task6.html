@@ -1,0 +1,44 @@
+<script>
+    var a = parseInt(Math.random() * 200 - 100);
+    var b = parseInt(Math.random() * 200 - 100);
+    var o = prompt("Компьютер выбрал случайные числа:" + "\na = " + a + "\nb = " + b + "\nВведите арифметическую операцию (+, -, *, /):")
+
+    function mathOperation(arg1, arg2, operation) {
+        switch(operation) {
+            case "+":
+                return getAddition(arg1, arg2);
+                break;
+            case "-":
+                return getSubtraction(arg1, arg2);
+                break;
+            case "*":
+                return getMultiplication(arg1, arg2);
+                break;
+            case "/":
+                return getDivision(arg1, arg2);
+                break;
+            default:
+                alert("Неправильная арифметическая операция!");
+                return ":(";
+                break;
+        }
+    }
+
+    function getAddition(x, y) {
+        return x + y;
+    }
+
+    function getSubtraction(x, y) {
+        return x - y;
+    }
+
+    function getMultiplication(x, y) {
+        return x * y;
+    }
+
+    function getDivision(x, y) {
+        return x / y;
+    }
+
+    alert("Результат: " + mathOperation(a, b, o));
+</script>
